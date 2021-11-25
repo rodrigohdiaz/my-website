@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shippori+Mincho:wght@400;500;600&display=swap');
+
+.container {
+    margin: auto;
+    max-width: 100%;
+    background-size: auto;
+    font-family: 'Shippori Mincho', serif;
+}
+
+.heading {
+    color: #beb5c4;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    background: #FFF;
+    height: 1.5rem;
+}
+
+.nav-link-item {
+    padding-top: 1rem;
+    padding-right: 2rem;
+}
+
+.nav-link-text {
+    color: black;
+    text-decoration: none;
+    margin-left: 1rem;
+}
