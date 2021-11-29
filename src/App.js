@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import {ThemeProvider} from "styled-components"
 import { GlobalStyles } from "./components/styles/globalStyles"
 import { lightTheme, darkTheme } from "./components/Themes"
+import './components/styles/globalStyles.css'
 
 
 
@@ -25,7 +26,11 @@ function App() {
       <GlobalStyles />
 
         <div className="App">
-        <button onClick={themeToggler}>Switch Theme</button>
+        {/* <button onClick={themeToggler}>Switch Theme</button> */}
+        <label className="switch">
+        <input onClick={themeToggler} type="checkbox"></input>
+          <span className="slider round"></span>
+        </label>
       <Welcome />
     </div>
     </>
