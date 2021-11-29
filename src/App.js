@@ -30,6 +30,7 @@ function App() {
         <label className="switch">
         <input onClick={themeToggler} type="checkbox"></input>
           <span className="slider round"></span>
+          <p className="toggleName">Light/dark theme</p>
         </label>
       <Welcome />
     </div>
