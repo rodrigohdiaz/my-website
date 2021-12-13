@@ -19,10 +19,38 @@ const localizer = dateFnsLocalizer({
     locales
 })
 
+const events = ""
+
 function MyCalendar() {
+
+    const [newEvent, setNewEvent] = useState({title: "", start: "", end: ""})
+    const [allEvents, setAllEvents] = useState(events)
+
+    function handleAddEvent() {
+        setAllEvents([...allEvents, newEvent])
+    }
+
+
     return (
         <div className="calendar">
-            <Calendar localizer={localizer} startAccessor="start" endAccessor="end" style={{height: 500, margin: "50px"}} />
+        <h1>Calendar</h1>
+        <h2>Add New Event</h2>
+        <div>
+            <input 
+                type="text" 
+                placeholder="Add Title" 
+                style={{width: "20%", marginRight: "10px"}}
+                value={newEvent.title} 
+                onChante={(e) => setNewEvent({...newEvent, title: e.target.value})}
+                />
+        </div>
+            <Calendar 
+                localizer={localizer} 
+                events={allEvents} 
+                startAccessor="start" 
+                endAccessor="end" 
+                style={{height: 400, width: 350, margin: "50px"}} 
+                />
         </div>
     )
 }
