@@ -6,6 +6,7 @@ import {ThemeProvider} from "styled-components"
 import { GlobalStyles } from "./components/styles/globalStyles"
 import { lightTheme, darkTheme } from "./components/Themes"
 import './components/styles/globalStyles.css'
+import MyCalendar from './components/Calendar'
 
 
 
@@ -33,6 +34,7 @@ function App() {
           <p className="toggleName">Light/dark theme</p>
         </label>
       <Welcome />
+      <MyCalendar />
     </div>
     </>
     </ThemeProvider>

@@ -1,6 +1,6 @@
  /* styling for toggle */
 .switch {
-    position: fixed;
+    position: absolute;
     top: 35px;
     right: 35px;
     display: inline-block;
