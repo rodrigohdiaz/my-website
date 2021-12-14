@@ -22,7 +22,7 @@ const localizer = dateFnsLocalizer({
 function MyCalendar() {
     return (
         <div className="calendar">
-            <Calendar localizer={localizer} startAccessor="start" endAccessor="end" style={{height: 500, margin: "50px"}} />
+            <Calendar localizer={localizer} startAccessor="start" endAccessor="end" style={{height: 400, width: 450, margin: "50px"}} />
         </div>
     )
 }
